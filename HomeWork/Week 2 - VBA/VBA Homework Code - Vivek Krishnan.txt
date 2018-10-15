@@ -1,0 +1,112 @@
+Option Explicit
+
+Sub stocks_market_analysis()
+
+Dim subtotal As Double
+Dim myRow As Double
+Dim yearly_change As Double
+Dim Open_Price As Double
+Dim Close_Price As Double
+Dim perc_change As Double
+Dim ws As Variant
+Dim i, j, z As Integer
+
+
+Dim myNewRow As Double
+Dim Gr8_Perc_Inc As Double
+Dim Gr8_Perc_Dec As Double
+Dim Gr8_Vol As Double
+Dim Gr8_Perc_Inc_Tkr As String
+Dim Gr8_Perc_Dec_Tkr As String
+Dim Gr8_Vol_Tkr As String
+
+For Each ws In Worksheets
+
+subtotal = 0
+j = 2
+Gr8_Vol = 0
+Gr8_Perc_Inc = 0
+Gr8_Perc_Dec = 0
+
+myRow = ws.Range(ws.Cells(2, 1), ws.Cells(2, 1).End(xlDown)).Count
+ 
+   For i = 2 To myRow + 1
+    
+        If ws.Range("A" & i).Value = ws.Range("A" & (i + 1)).Value Then
+        subtotal = subtotal + ws.Cells(i, 7).Value
+            If ws.Range("A" & i).Value <> ws.Range("A" & (i - 1)).Value Then
+                Open_Price = ws.Range("C" & i).Value
+            End If
+        
+        Else
+        subtotal = subtotal + ws.Cells(i, 7).Value
+        ws.Range("K" & j).Value = ws.Range("A" & i).Value
+        ws.Range("N" & j).Value = subtotal
+        Close_Price = ws.Range("F" & i).Value
+        yearly_change = Close_Price - Open_Price
+        ws.Range("L" & j).Value = yearly_change
+            If yearly_change >= 0 Then
+            ws.Range("L" & j).Interior.ColorIndex = 4
+            Else
+            ws.Range("L" & j).Interior.ColorIndex = 3
+            End If
+        If Open_Price <> 0 Then
+            perc_change = ((Close_Price - Open_Price) / Open_Price)
+        Else
+            perc_change = 0
+        End If
+        ws.Range("M" & j).Value = perc_change
+        ws.Range("M" & j).NumberFormat = "0.00%"
+        ws.Range("K1:N1", "P1:R1").Interior.ColorIndex = 8
+        subtotal = 0
+        j = j + 1
+        End If
+
+    Next i
+
+    myNewRow = ws.Range(ws.Cells(2, 11), ws.Cells(2, 11).End(xlDown)).Count
+
+    For z = 2 To myNewRow + 1
+           
+        If (ws.Range("N" & z).Value > Gr8_Vol) Then
+            Gr8_Vol = ws.Range("N" & z).Value
+            Gr8_Vol_Tkr = ws.Range("K" & z).Value
+        End If
+
+        If (ws.Range("M" & z).Value > Gr8_Perc_Inc) Then
+            Gr8_Perc_Inc = ws.Range("M" & z).Value
+            Gr8_Perc_Inc_Tkr = ws.Range("K" & z).Value
+        End If
+
+        If (ws.Range("M" & z).Value < Gr8_Perc_Dec) Then
+            Gr8_Perc_Dec = ws.Range("M" & z).Value
+            Gr8_Perc_Dec_Tkr = ws.Range("K" & z).Value
+        End If
+
+    Next z
+
+ws.Range("K1").Value = "Ticker"
+ws.Range("N1").Value = "Total Stock Volume"
+ws.Range("L1").Value = "Yearly Change"
+ws.Range("M1").Value = "Percentage Change"
+ws.Range("Q1").Value = "Ticker"
+ws.Range("R1").Value = "Value"
+ws.Range("P2").Value = "Greatest % Increase"
+ws.Range("P3").Value = "Greatest % Decrease"
+ws.Range("P4").Value = "Greatest Total Volume"
+ws.Range("Q2").Value = Gr8_Perc_Inc_Tkr
+ws.Range("R2").Value = Gr8_Perc_Inc
+ws.Range("R2").NumberFormat = "0.00%"
+ws.Range("Q3").Value = Gr8_Perc_Dec_Tkr
+ws.Range("R3").Value = Gr8_Perc_Dec
+ws.Range("R3").NumberFormat = "0.00%"
+ws.Range("Q4").Value = Gr8_Vol_Tkr
+ws.Range("R4").Value = Gr8_Vol
+ws.Range("K:R").Columns.AutoFit
+        
+Next
+
+End Sub
+
+
+

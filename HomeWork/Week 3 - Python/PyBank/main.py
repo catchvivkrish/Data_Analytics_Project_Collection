@@ -26,13 +26,11 @@ def main():
     line_average = []
     with open(csvpath, newline="") as csvfile:
         csvreader = csv.reader(csvfile, delimiter=",")
-        firstline = True
+        if csv.Sniffer().has_header(open(csvpath).read(1024)):
+            next(csvreader)
         #list = [row[1] for row in csvreader]
         #list.remove('Profit/Losses')
         for row in csvreader:
-            if firstline:  # skip first line which is the header
-                firstline = False
-                continue
             total_months += 1
             total_profits = total_profits + int(row[1])
             list.append(row[1])

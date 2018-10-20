@@ -29,11 +29,9 @@ def main():
 
     with open(csvpath, newline="") as csvfile:
         csvreader = csv.reader(csvfile, delimiter=",")
-        firstline = True
+        if csv.Sniffer().has_header(open(csvpath).read(1024)):
+            next(csvreader)
         for row in csvreader:
-            if firstline:  # skip first line which is the header
-                 firstline = False
-                 continue
             total_votes += 1
             if row[2] not in list1:
                 list1[row[2]] = 1

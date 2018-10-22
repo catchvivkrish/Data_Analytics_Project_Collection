@@ -19,8 +19,9 @@ def main():
     import csv
     import sys
     csvpath = os.path.join("budget_data.csv")
+    txtpath_out = os.path.join("PyBank_Results.txt")
     total_months = int(0)
-    total_profits = int(0)
+    total_profits = float(0)
     list = []
     list2 = []
     line_average = []
@@ -28,11 +29,19 @@ def main():
         csvreader = csv.reader(csvfile, delimiter=",")
         if csv.Sniffer().has_header(open(csvpath).read(1024)):
             next(csvreader)
+        """
+        firstrow = True
+            while firstrow:
+                firstrow = False
+                next(csvreader)
+                continue
+        """
         #list = [row[1] for row in csvreader]
         #list.remove('Profit/Losses')
+        #firstrow = True
         for row in csvreader:
             total_months += 1
-            total_profits = total_profits + int(row[1])
+            total_profits = total_profits + float(row[1])
             list.append(row[1])
             list2.append(row[0])
 
@@ -42,25 +51,19 @@ def main():
         final_average = sum(line_average)/len(line_average)
         final_average = round(final_average,2)
 
-        print("Financial Analysis")
-        print("----------------------------")
-        print ("Total Months: " + str(total_months))
-        print ("Total Profit: " + str(total_profits))
-        print ("Average  Change:" + str(final_average))
-        print("Greatest Increase in Profits: " + str(list2[line_average.index(max(line_average))+1]) + " " +
-              str(max(line_average)))
-        print("Greatest Decrease in Profits: " + str(list2[line_average.index(min(line_average))+1]) + " " +
-              str(min(line_average)))
+        print_content = (f"Financial Analysis\n"
+                  f"----------------------------\n"
+                  f"Total Months: {total_months}\n"
+                  f"Total Profit: {total_profits}\n"
+                  f"Average  Change: + {final_average}\n"
+                  f"Greatest Increase in Profits: {list2[(line_average.index(max(line_average))+1)]} (${max(line_average)}) \n"
+                  f"Greatest Increase in Profits: {list2[(line_average.index(min(line_average))+1)]} (${min(line_average)}) \n"
+                  )
+        print(print_content)
 
-        sys.stdout = open('PyBank_Results.txt', 'w')
-        print("Financial Analysis")
-        print("----------------------------")
-        print("Total Months: " + str(total_months))
-        print("Total Profit: " + str(total_profits))
-        print("Average  Change:" + str(final_average))
-        print("Greatest Increase in Profits: " + str(list2[line_average.index(max(line_average)) + 1]) + " " +
-              str(max(line_average)))
-        print("Greatest Decrease in Profits: " + str(list2[line_average.index(min(line_average)) + 1]) + " " +
-              str(min(line_average)))
-        sys.stdout.close()
+        with open(txtpath_out, 'w') as txtfile:
+            txtfile.write(print_content)
+        #sys.stdout = open('PyBank_Results.txt', 'w')
+        #print(print_content)
+        #sys.stdout.close()
 main()

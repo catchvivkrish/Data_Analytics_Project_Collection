@@ -46,4 +46,3 @@ def main():
             txtfile.write(print_content3)
 
 main()
-

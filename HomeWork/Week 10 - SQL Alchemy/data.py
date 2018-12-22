@@ -10,7 +10,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 from sqlalchemy.pool import StaticPool
 # engine = create_engine("sqlite:///" + r"C:\Users\nsita\Dropbox\UCB\data-analytics\Homework\Homework 8\Resources\hawaii.sqlite", connect_args={'check_same_thread': False}, echo=True)
-engine = create_engine("sqlite:///" + r"C:\Users\nsita\Dropbox\UCB\data-analytics\Homework\Homework 8\Resources\hawaii.sqlite",poolclass=StaticPool,connect_args={'check_same_thread':False})
+engine = create_engine("sqlite:///" + r"C:\Users\catch\Documents\DataAnalytics_GitHub\HomeWork\Week 10 - SQL Alchemy\Resources\hawaii.sqlite",poolclass=StaticPool,connect_args={'check_same_thread':False})
 
 # reflect an existing database into a new model
 Base = automap_base()

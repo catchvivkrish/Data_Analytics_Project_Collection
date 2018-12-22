@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 8 API</title>
+  <script>
+
+  </script>
+</head>
+
+<body>
+  <!-- Headline -->
+  <h1>Homework 8 API</h1>
+  <!-- f"Welcome to the Homework 8 Flask API<br/>"
+  f"Available Routes:<br>"
+  f"<a href='http://127.0.0.1:5000/api/v1.0/precipitation'>precipitation</a><br>"
+  f"<a href='http://127.0.0.1:5000/api/v1.0/stations'>stations</a><br>"
+  f"<a href='http://127.0.0.1:5000/api/v1.0/tobs'>tobs</tobs></a><br>"
+  f"/api/v1.0/start<br>"
+  f"/api/v1.0/start/end<br>" -->
+
+  <h2>Navigation links:</h3>
+  <ul>
+    <li><a href="http://127.0.0.1:5000/api/v1.0/precipitation">Precipitation Data</a></li>
+    <li><a href='http://127.0.0.1:5000/api/v1.0/stations'>Stations Data</a><br></li>
+    <li><a href='http://127.0.0.1:5000/api/v1.0/tobs'>Temperature</a><br></li>
+    <li>/api/v1.0/StartDate</li>
+    <li>/api/v1.0/StartDate/EndDate</li>
+  </ul>
+  <em>Date Format:YYYY-MM-DD</em>
+  <p><var>Manually make the query with the format above or use the input below.</var></p>
+
+  <br>
+  <br>
+  <form action="http://127.0.0.1:5000/api/v1.0/DateQuery/">
+    Start Date <input type="text" id="start_date" name="StartDate" value="2010-01-01"><br>
+    End Date: <input type="text" id="end_date" name="EndDate" value="2017-08-23"><br>
+    <input type="submit" value="Submit">
+    </form>
+    <!-- <script>
+      $("form").submit(function(){
+        if($("#end_date").val() == ""){
+              $("#end_date").val("2017-08-23");
+        }    
+        if($("#start_date").val() == ""){
+              $("#start_date").val("2010-01-01");
+      }
+      });
+    </script> -->
+</body>
+
+
+</html>

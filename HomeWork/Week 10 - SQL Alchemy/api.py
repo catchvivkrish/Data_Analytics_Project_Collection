@@ -89,7 +89,7 @@ def welcome():
 # @app.route("/")
 # def welcome():
 #     return (
-#         f"Welcome to the Homework 8 Flask API<br/>"
+#         f"Welcome to the SQL Alchemy Homework using Flask API<br/>"
 #         f"Available Routes:<br>"
 #         f"<a href='http://127.0.0.1:5000/api/v1.0/precipitation'>precipitation</a><br>"
 #         f"<a href='http://127.0.0.1:5000/api/v1.0/stations'>stations</a><br>"

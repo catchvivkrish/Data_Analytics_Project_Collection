@@ -1,0 +1,68 @@
+.sub-row1{
+  padding: 0px 0px;
+  margin: 0;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  text-align: left;
+  border-style: solid;
+}
+
+.sub-row2{
+  padding: 0px 0px;
+  margin: 0;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  text-align: left;
+  border-style: solid;
+}
+
+.sub-row-body{
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.sub-row-head{
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+#home-image{
+    float: left;
+    width: 90%;
+    height: 91%;
+    margin-right: 0px;
+    margin-top: -5px;
+	margin-left: 0px;
+}
+
+.container1{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+footer {
+    position: relative;
+    margin-top: -10px; /* negative value of footer height */
+    height: 35px;
+    text-align: center;
+    padding: 5px 0;
+	color: white;
+    background-color: #282828;
+    border-color: #033C73;
+	margin-top: 80px;
+	font-size: 14px;
+} 
+
+.jumbotron {
+    padding-top: 2rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}

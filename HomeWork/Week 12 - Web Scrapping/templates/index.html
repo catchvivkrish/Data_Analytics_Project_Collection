@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initia-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Mission to Mars</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-e4EhcNyUDF/kj6ZoPkLnURgmd8KW1B4z9GHYKb7eTG3w3uN8di6EBsN2wrEYr8Gc" crossorigin="anonymous">
+	<link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+<div class="container1">
+	<div class ="row">
+	<div class="col-md-12">
+		<div class="jumbotron container-fluid text-center">
+			<h1>Mission to Mars</h1>
+			<hr></hr>
+			<p><a class="btn btn-outline-primary btn-lg" href="/scrape" role="button">Update Information</a></p>
+		</div>
+	</div>
+	</div>
+
+	<div class ="row">
+	<div class="col-md-12">
+		<h3>Latest Mars News</h3>
+		<h4>{{ mars.news_title }}</h4>
+		<p>{{ mars.article_teaser_body }}</p>
+		<p>&nbsp;</p>
+	</div>
+	</div>	
+	<div class ="row">
+	<div class="col-md-8">
+		<h3>Featured Mars Image:</h3>
+		<a target="_self" href={{ mars.featured_image_url }}>
+					<img id="home-image" src={{ mars.featured_image_url }} alt="Ft. Mars Image">
+		</a>
+	</div>
+	
+	<div class="col-md-4">
+	
+		<div class="sub-row1">
+		<h3 class="sub-row-head">Current Weather on Mars</h3>
+		<p class="sub-row-body">{{ mars.mars_weather }}</p>
+		</div>
+	
+		<div class="sub-row2">
+		<h3 class="sub-row-head"> Mars Facts</h3>
+		{{mars.mars_facts | safe}}
+		</div>
+		
+	</div>
+	</div>
+
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<footer>
+			<p1 class="site-info">© Copyright - Vivek Krishnan - Data Analytics Bootcamp 2019</p1>
+		</footer>
+	</div>
+</div>
+
+</body>

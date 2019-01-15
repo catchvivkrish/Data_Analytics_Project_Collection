@@ -1,0 +1,19 @@
+company_diversity_m_f1 = company_diversity[['Fortune 500 Rank','Company Name_x','Revenues','Profits','Market Value','Total Emp','Female Total','Male Total']]
+company_diversity_m_f1['Female %'] = ((company_diversity_m_f1['Female Total']/company_diversity_m_f1['Total Emp'])*100)
+company_diversity_m_f1['Male %'] = ((company_diversity_m_f1['Male Total']/company_diversity_m_f1['Total Emp'])*100)
+#company_diversity_m_f1 = company_diversity_m_f1.rename(columns={'Company Name_x':'Company Name','Revenues':'Revenue in $ million','Profits':'Profit in $ million','Market Value':'Market Value in $ million'})
+company_diversity_m_f1 = company_diversity_m_f1.round(2)
+company_diversity_m_f1
+company_diversity_m_f1 = company_diversity_m_f1.rename(columns={'Fortune 500 Rank':'Fortune_500_Rank','Company Name':'Company_Name','Total Emp':'Total_emp','Female Total':'Female_Total','Male Total':'Male_Total','Female %':'Female_Perc','Male %':'Male_Perc'})
+company_diversity_m_f1 = company_diversity_m_f1.set_index('Fortune_500_Rank')
+company_diversity_m_f_pic = company_diversity_m_f1[['Company Name_x','Revenues','Profits','Market Value', 'Total_emp', 'Female_Perc', 'Male_Perc']]
+company_diversity_m_f_pic = company_diversity_m_f_pic.rename(columns=
+                                                       {'Company Name_x':'Company Name','Revenues':'Revenue (mil)','Profits':'Profit (mil)','Market Value':'Market Value (mil)', 'Total_emp':'Total Employees', 'Female_Perc':'Female Percentage', 'Male_Perc':'Male Percentage' })
+
+company_diversity_m_f_pic
+
+
+company_diversity_race_pic = company_diversity_race [['Company_Name', 'Revenue_in_million', 'Profit_in_million', 'Market_Value_in_million', 'Total_Emp', 'White_perc', 'Black_perc', 'Asian_perc','Hispanic_perc','Hawaiian_perc', 'American_Indian_Alaskan_Total_perc', 'Two_or_More_Race_perc']]
+company_diversity_race_pic = company_diversity_race_pic.rename(columns=
+                                                       {'Company_Name':'Company Name','Total_Emp':'Total Emp','Revenue_in_million':'Revenue (mil)','Profit_in_million':'Profit (mil)','Market_Value_in_million':'Market Value (mil)','Hispanic_perc':'Hispanic %','White_perc':'White %','Black_perc':'Black %', 'Hawaiian_perc':'Hawaiian %', 'Asian_perc':'Asian %', 'American_Indian_Alaskan_Total_perc':'Am_Ind /Alaskan %', 'Two_or_More_Race_perc':'2 or More %'})
+company_diversity_race_pic

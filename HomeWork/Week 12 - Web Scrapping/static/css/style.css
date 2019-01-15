@@ -23,7 +23,7 @@
 .sub-row-body{
   margin-top: 20px;
   margin-left: 20px;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
 }
 
@@ -65,4 +65,8 @@ footer {
     padding-right: 1rem;
     padding-bottom: 2rem;
     padding-left: 1rem;
+}
+
+p{
+  font-size: 16px;	
 }

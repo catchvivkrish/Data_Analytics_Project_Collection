@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initia-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ETL Report</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/sketchy/bootstrap.min.css" rel="stylesheet" integrity="sha384-Yr9hLdz4zKsdMcB2IUf0I2Y+KFalEfJez2d0H2rgQoAYjvm/mzbm2egxZ9Gc9kkg" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+	<div class ="row">
+	<div class="col-md-12">
+		<div class="jumbotron container-fluid text-center">
+			<h1>Extract Transform and Load - Project Report</h1>
+		</div>
+	</div>
+	</div>
+
+	<div class ="row">
+		<div class="col-md-12">
+			<h3>Objective:</h3>
+			<p>
+			 Use 2 or more data sources like 'data.world', 'kaggle', API's or web scraping. Extract the data from the source, transform it using suitable python and or pandas functions to translate it into the intended dataset and finally load it into either a relational or non-relational database
+			</p>
+			<p>&nbsp;</p>
+		</div>
+	</div>
+
+	<div class ="row">
+		<div class="col-md-12">
+			<h3>Project Summary:</h3>
+			<p>
+			 Identify the prevalence of diversity across the Fortune 500 companies
+			</p>
+			<p>&nbsp;</p>
+		</div>
+	</div>
+	
+	<div class ="row">
+		<div class="col-md-12">
+			<h3>Extraction:</h3>
+			<ul style=list-style-type="1"> 
+				<li>The project used Kaggle and data.world as the data source to obtain 3 different data sets:</li>
+				<p>
+					<ol style=list-style-type="1">
+					  <li>Diversity data for the Fortune 500 companies – Source ‘Kaggle’ – Format ‘.csv’ file</li>
+					  <li>Data Dictionary for ‘Fortune 500 companies diversity data’ – Source ‘Kaggle’ – Format ‘.csv’ file</li>
+					  <li>Fortune 500 company ranking, revenue, profile and market value – Source data.world – Format ‘.csv’ fil</li>
+					</ol>
+				</p>
+				<li>A Combination of python and pandas library was used to read the csv file</li>
+			</ul>
+			<p>&nbsp;</p>
+		</div>
+	</div>	
+	<div class ="row">
+		<div class="col-md-12">
+			<h3>Transformation:</h3>
+			<ul style=list-style-type="1"> 
+				<li>Multiple transformations were performed on the data:</li>
+				<p>
+					<ol style=list-style-type="1">
+					  <li>Loaded the 3 datasets into 3 pandas dataframes</li>
+					  <li>Company Name - Used map(lambda) and regular expression function to remove special characters before converting to lower case string to facilitate joining of 2 data sets</li>
+					  <li>Filtered out company data that had partial and no diversity information</li>
+					  <li>Replaced few company names to ensure match during a join (e.g. ‘Costco’ in one dataframe vs. ‘Costco Wholesale’ in another dataframe)</li>
+					  <li>Merged datasets using inner join using Company Name as the key</li>
+					  <li>Joined the data set with the data dictionary to translate diversity column names to user friendly and user interpretable values</li>
+					  <li>Used list comprehension to uniquely identify Female vs. Male columns names from the merged data set</li>
+					  <li>Created a new dataframe and used aggregation to show the % split between male and female employee strength for each company</li>
+					  <li>Used list comprehension to uniquely identify diversity based on race (White, Black, Hawaiian, Asian, American Indian / Alaskan vs. Two or More Races)</li>
+					  <li>Created a new dataframe and used aggregation to show the % split across various races for each company </li>
+					  <li>Used the round function to round aggregated data</li>
+					  <li>Converted string columns to integer datatype after replacing (‘$’,’,’ etc.) from numeric fields</li>
+					  <li>Renamed columns keeping MySQL column name limitation in mind for ease of readability and loading</li>
+					</ol>
+				</p>
+			</ul>
+			<p>&nbsp;</p>
+		</div>
+	</div>
+	<div class ="row">
+		<div class="col-md-12">
+			<h3>Load:</h3>
+			<p>
+				<ul style=list-style-type="1">
+				  <li>Considering the starting dataset was structured and the different data sets could be connected via a common key, we decided to load the data into a relational database like MySQL</li>
+				  <li>2 tables (one identifying diversity across companies by sex and a second one identifying diversity across companies by race) were loaded into MySQL database</li>
+				  <li>The data was into MySQL using pymysql python package</li>
+				  <li>Data loaded into MySQL DB was confirmed using pd.read_sql_query and also by directly running a query in MySQL workbench</li>
+				</ul>
+			</p>
+			<p>&nbsp;</p>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-12">
+			<h3>Project Observation:</h3>
+			<h4>Diversity by Sex:</h4>
+			<a target="_self" href="/">
+					<img id="sex" src="resources/diversity_by-sex.png" alt="Diversity by Sex">
+			</a>
+			<p>&nbsp;</p>
+			<h4>Diversity by Race:</h4>
+			<a target="_self" href="/">
+					<img id="race" src="resources/diversity_by-race.png" alt="Diversity by Race">
+			</a>
+			<p>&nbsp;</p>
+		</div>
+	</div>
+
+	
+	<div class="row">
+		<div class="col-md-12">
+			<footer>
+				<p1 class="site-info">© Copyright - Vivek, Horace & Raul - Data Analytics Bootcamp 2019</p1>
+			</footer>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+.container{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.jumbotron {
+    padding-top: 2rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+p{
+	font-size: 17px;
+}
+
+li{
+	font-size: 17px;
+}
+
+footer {
+    position: relative;
+    margin-top: -10px; /* negative value of footer height */
+    height: 35px;
+    text-align: center;
+    padding: 5px 0;
+	color: white;
+    background-color: #282828;
+    border-color: #033C73;
+	margin-top: 80px;
+	font-size: 14px;
+} 

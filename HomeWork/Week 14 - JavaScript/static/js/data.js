@@ -14,7 +14,7 @@ var data = [{
     country: "us",
     shape: "light",
     durationMinutes: "13 minutes",
-    comments: "Three bright red lights witnessed floating stationary over San Diego New Years Day 2010"
+    comments: "Three bright red lights witnessed floating stationary over San Diego New Year’s Day 2010"
   },
   {
     datetime: "1/1/2010",
@@ -23,7 +23,7 @@ var data = [{
     country: "us",
     shape: "triangle",
     durationMinutes: "6 minutes",
-    comments: "On New Years Eve I went outside to hear the celebration and fireworks in my neighbor hood. And noticed 3 red lights above my house and"
+    comments: "On New Year’s Eve I went outside to hear the celebration and fireworks in my neighborhood. And noticed 3 red lights above my house"
   },
   {
     datetime: "1/1/2010",
@@ -49,7 +49,7 @@ var data = [{
     state: "or",
     country: "us",
     shape: "triangle",
-    durationMinutes: "a few mintues",
+    durationMinutes: "a few minutes",
     comments: "Triangle shaped craft with three red lights at points hovering over Grants Pass&#44 Oregon."
   },
   {
@@ -77,7 +77,7 @@ var data = [{
     country: "us",
     shape: "unknown",
     durationMinutes: "3 minutes",
-    comments: "One huge UFO or three seperate ones"
+    comments: "One huge UFO or three separate ones"
   },
   {
     datetime: "1/1/2010",
@@ -113,7 +113,7 @@ var data = [{
     country: "us",
     shape: "light",
     durationMinutes: "10:00",
-    comments: "Three bright red lights in a straight line formation"
+    comments: "Three bright red lights in a straight-line formation"
   },
   {
     datetime: "1/1/2010",
@@ -122,7 +122,7 @@ var data = [{
     country: "us",
     shape: "formation",
     durationMinutes: "7 min",
-    comments: "four orange red objects suddenly appear 12:01 am new years move north then south and dissapear"
+    comments: "four orange red objects suddenly appear 12:01 am new year’s move north then south and disappeared"
   },
   {
     datetime: "1/1/2010",
@@ -130,7 +130,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "other",
-    durationMinutes: "30 minuets",
+    durationMinutes: "30 minutes",
     comments: "Objects in sky over Antioch California 12:03AM January 1&#44  2010"
   },
   {
@@ -140,7 +140,7 @@ var data = [{
     country: "us",
     shape: "light",
     durationMinutes: "10min",
-    comments: "3 red lights in sky new years 2010"
+    comments: "3 red lights in sky new year’s 2010"
   },
   {
     datetime: "1/1/2010",
@@ -149,7 +149,7 @@ var data = [{
     country: "us",
     shape: "sphere",
     durationMinutes: "2 min",
-    comments: "i&#39m in naples park. last night&#44 my husband and I were sitting outside --neighbors lighting off fireworks&#44 etc. We&#39re under a lanai and"
+    comments: "I&#39m in naples park. last night&#44 my husband and I were sitting outside --neighbors lighting off fireworks&#44 etc. We&#39re under a lanai and"
   },
   {
     datetime: "1/1/2010",
@@ -175,7 +175,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "formation",
-    durationMinutes: "25 mintutes",
+    durationMinutes: "25 minutes",
     comments: "3 red lights over the mountains in Eastern San Diego"
   },
   {
@@ -185,7 +185,7 @@ var data = [{
     country: "us",
     shape: "fireball",
     durationMinutes: "4 minutes",
-    comments: "Slow moving fireball northbound at hight altitude Southern Florida"
+    comments: "Slow moving fireball northbound at high altitude Southern Florida"
   },
   {
     datetime: "1/1/2010",
@@ -194,7 +194,7 @@ var data = [{
     country: "us",
     shape: "disk",
     durationMinutes: "8 mins",
-    comments: "We experienced red disk over the falcon&#44 colorado sky within the first minutes of the new year."
+    comments: "We experienced red disk over the falcon&#44 Colorado sky within the first minutes of the new year."
   },
   {
     datetime: "1/1/2010",
@@ -212,7 +212,7 @@ var data = [{
     country: "us",
     shape: "chevron",
     durationMinutes: "2 mins",
-    comments: "New Years Eve Anomoly In Aspen Colorado"
+    comments: "New Year’s Eve Anomaly in Aspen Colorado"
   },
   {
     datetime: "1/1/2010",
@@ -248,7 +248,7 @@ var data = [{
     country: "us",
     shape: "sphere",
     durationMinutes: "10-11 min",
-    comments: "4 redishorange shpereiodical objects appear during 2010 fireworks show hover around then disappear  500 Lights On Object0: Yes"
+    comments: "4 reddish orange shpereiodical objects appear during 2010 fireworks show hover around then disappeared. 500 Lights on Object: Yes"
   },
   {
     datetime: "1/1/2010",
@@ -257,7 +257,7 @@ var data = [{
     country: "us",
     shape: "triangle",
     durationMinutes: "3 minutes",
-    comments: "It happen nEw years eve 2010"
+    comments: "It happen New Year’s Eve 2010"
   },
   {
     datetime: "1/1/2010",
@@ -284,7 +284,7 @@ var data = [{
     country: "us",
     shape: "light",
     durationMinutes: "half an hour",
-    comments: "My wife and I were outside in the Jacuzzi when she first saw a light.  It glowed and traveled from north to south.  It lit up again whe"
+    comments: "My wife and I were outside in the Jacuzzi when she first saw a light.  It glowed and traveled from north to south."
   },
   {
     datetime: "1/1/2010",
@@ -293,7 +293,7 @@ var data = [{
     country: "us",
     shape: "sphere",
     durationMinutes: "1 min",
-    comments: "Bright light sets in the eastren sky."
+    comments: "Bright light sets in the eastern sky."
   },
   {
     datetime: "1/1/2010",
@@ -338,7 +338,7 @@ var data = [{
     country: "us",
     shape: "sphere",
     durationMinutes: "10 minutes",
-    comments: "I was on my way out the door of my house &#44 when i stepped into the drive way of my house i noticed a redish/orange moon it was straight"
+    comments: "I was on my way out the door of my house &#44 when I stepped into the drive way of my house, I noticed a reddish/orange moon it was straight"
   },
   {
     datetime: "1/2/2010",
@@ -360,21 +360,21 @@ var data = [{
   },
   {
     datetime: "1/2/2010",
-    city: "loveland",
+    city: "Loveland",
     state: "co",
     country: "us",
     shape: "cross",
     durationMinutes: "5 minutes",
-    comments: "extremely bright light over tree in loveland&#44 CO"
+    comments: "extremely bright light over tree in Loveland&#44 CO"
   },
   {
     datetime: "1/2/2010",
-    city: "atlanta",
+    city: "Atlanta",
     state: "ga",
     country: "us",
     shape: "fireball",
     durationMinutes: "3 seconds",
-    comments: "glowing red spaceship flys at car"
+    comments: "glowing red spaceship fly’s at car"
   },
   {
     datetime: "1/3/2010",
@@ -383,7 +383,7 @@ var data = [{
     country: "us",
     shape: "circle",
     durationMinutes: "20 mins",
-    comments: "didnt move like a plane or helicopter&#44 too close to be a star."
+    comments: "didn’t move like a plane or helicopter&#44 too close to be a star."
   },
   {
     datetime: "1/4/2010",
@@ -396,8 +396,8 @@ var data = [{
   },
   {
     datetime: "1/4/2010",
-    city: "reedville",
-    state: "va",
+    city: "Reedville",
+    state: "VA",
     country: "us",
     shape: "changing",
     durationMinutes: "abt 1 hour",
@@ -405,7 +405,7 @@ var data = [{
   },
   {
     datetime: "1/4/2010",
-    city: "cleveland",
+    city: "Cleveland",
     state: "oh",
     country: "us",
     shape: "triangle",
@@ -414,7 +414,7 @@ var data = [{
   },
   {
     datetime: "1/4/2010",
-    city: "whittier",
+    city: "Whittier",
     state: "ca",
     country: "us",
     shape: "light",
@@ -424,7 +424,7 @@ var data = [{
   {
     datetime: "1/4/2010",
     city: "ben wheeler",
-    state: "tx",
+    state: "TX",
     country: "us",
     shape: "light",
     durationMinutes: "2-3 minutes",
@@ -442,11 +442,11 @@ var data = [{
   {
     datetime: "1/4/2010",
     city: "cedar rapids",
-    state: "ia",
+    state: "IA",
     country: "us",
     shape: "light",
     durationMinutes: "15 min",
-    comments: "Two very bright white lights come close together in the northwest sky and one dissapears..."
+    comments: "Two very bright white lights come close together in the northwest sky and one disappeared..."
   },
   {
     datetime: "1/4/2010",
@@ -459,7 +459,7 @@ var data = [{
   },
   {
     datetime: "1/5/2010",
-    city: "princeton",
+    city: "Princeton",
     state: "in",
     country: "us",
     shape: "disk",
@@ -473,25 +473,25 @@ var data = [{
     country: "us",
     shape: "oval",
     durationMinutes: "10 seconds",
-    comments: "One Oval Spining above Chula Vista"
+    comments: "One Oval Spinning above Chula Vista"
   },
   {
     datetime: "1/5/2010",
     city: "colonia",
-    state: "nj",
+    state: "NJ",
     country: "us",
     shape: "unknown",
     durationMinutes: "15 min",
-    comments: "loud aircraft that could be heard for up to 15 minutes at its lowest rummble."
+    comments: "loud aircraft that could be heard for up to 15 minutes at its lowest rumble."
   },
   {
     datetime: "1/5/2010",
-    city: "clinton",
-    state: "nj",
+    city: "Clinton",
+    state: "NJ",
     country: "us",
     shape: "cigar",
     durationMinutes: "3 weeks",
-    comments: "Traveling to Pennylvania."
+    comments: "Traveling to Pennsylvania."
   },
   {
     datetime: "1/5/2010",
@@ -504,7 +504,7 @@ var data = [{
   },
   {
     datetime: "1/5/2010",
-    city: "rockwell",
+    city: "Rockwell",
     state: "nc",
     country: "us",
     shape: "cigar",
@@ -513,8 +513,8 @@ var data = [{
   },
   {
     datetime: "1/5/2010",
-    city: "anderson",
-    state: "sc",
+    city: "Anderson",
+    state: "SC",
     country: "us",
     shape: "light",
     durationMinutes: "seven minutes",
@@ -527,7 +527,7 @@ var data = [{
     country: "us",
     shape: "light",
     durationMinutes: "20 minutes",
-    comments: "Unusual silent&#44 orange glowing light stopping changing direction and discharging sudstance."
+    comments: "Unusual silent&#44 orange glowing light stopping changing direction and discharging substance."
   },
   {
     datetime: "1/6/2010",
@@ -536,7 +536,7 @@ var data = [{
     country: "us",
     shape: "teardrop",
     durationMinutes: "5 minutes",
-    comments: "I was at home in my condo at night.My condo faces the back of the 16 unit building."
+    comments: "I was at home in my condo at night. My condo faces the back of the 16-unit building."
   },
   {
     datetime: "1/6/2010",
@@ -549,7 +549,7 @@ var data = [{
   },
   {
     datetime: "1/7/2010",
-    city: "southampton",
+    city: "Southampton",
     state: "ny",
     country: "us",
     shape: "formation",
@@ -558,7 +558,7 @@ var data = [{
   },
   {
     datetime: "1/7/2010",
-    city: "mansfield",
+    city: "Mansfield",
     state: "ma",
     country: "us",
     shape: "light",
@@ -567,17 +567,17 @@ var data = [{
   },
   {
     datetime: "1/7/2010",
-    city: "edgartown",
+    city: "Edgartown",
     state: "ma",
     country: "us",
     shape: "circle",
     durationMinutes: "50 sec.",
-    comments: "UFO  Sighting 01/07/12010  My wife and I were sitting in our hot tub when we saw it.  It was almost overhead traveling from west to eas"
+    comments: "UFO Sighting 01/07/2010.  My wife and I were sitting in our hot tub when we saw it.  It was almost overhead traveling from west to east"
   },
   {
     datetime: "1/7/2010",
     city: "windham",
-    state: "nh",
+    state: "NH",
     country: "us",
     shape: "light",
     durationMinutes: "2 seconds",
@@ -604,7 +604,7 @@ var data = [{
   {
     datetime: "1/8/2010",
     city: "fort worth",
-    state: "tx",
+    state: "TX",
     country: "us",
     shape: "chevron",
     durationMinutes: "20 minutes",
@@ -612,8 +612,8 @@ var data = [{
   },
   {
     datetime: "1/8/2010",
-    city: "tomball",
-    state: "tx",
+    city: "Tomball",
+    state: "TX",
     country: "us",
     shape: "unknown",
     durationMinutes: "10-15 seconds",
@@ -635,7 +635,7 @@ var data = [{
     country: "us",
     shape: "triangle",
     durationMinutes: "40 seconds",
-    comments: "A trangular craft with several&#44 large&#44 bright lights flew low and quick over the neighborhood"
+    comments: "A triangular craft with several&#44 large&#44 bright lights flew low and quick over the neighborhood"
   },
   {
     datetime: "1/9/2010",
@@ -644,16 +644,16 @@ var data = [{
     country: "ca",
     shape: "disk",
     durationMinutes: "10-20 mins",
-    comments: "very close encounter with what i truley cant imagine"
+    comments: "very close encounter with what I truly can’t imagine"
   },
   {
     datetime: "1/9/2010",
-    city: "cleveland",
+    city: "Cleveland",
     state: "tn",
     country: "us",
     shape: "other",
     durationMinutes: "unknown",
-    comments: "my daughter went with her mother to look for a job&#44 at hickery springs mfco.she toke a picture of her self seting in the drivers set. a"
+    comments: "my daughter went with her mother to look for a job&#44 at hickery springs mfco.she toke a picture of it sitting in the driver’s seat."
   },
   {
     datetime: "1/9/2010",
@@ -667,7 +667,7 @@ var data = [{
   {
     datetime: "1/9/2010",
     city: "woodbridge",
-    state: "nj",
+    state: "NJ",
     country: "us",
     shape: "light",
     durationMinutes: "nine minutes",
@@ -748,7 +748,7 @@ var data = [{
   {
     datetime: "1/10/2010",
     city: "round rock",
-    state: "tx",
+    state: "TX",
     country: "us",
     shape: "light",
     durationMinutes: "2 seconds",
@@ -760,7 +760,7 @@ var data = [{
     state: "ca",
     country: "us",
     shape: "unknown",
-    durationMinutes: "5 secondes",
+    durationMinutes: "5 seconds",
     comments: "A bright light hitting us while leaving at high speed"
   },
   {
@@ -815,7 +815,7 @@ var data = [{
     country: "us",
     shape: "chevron",
     durationMinutes: "1-2 minutes",
-    comments: "((HOAX??))  I was heading driving to the store when I seen a red and yellow lighted craft in the air flying 1000 ft or less strobing."
+    comments: "((HOAX??))  I was heading driving to the store when I saw a red and yellow lighted craft in the air flying 1000 ft or less strobing."
   },
   {
     datetime: "1/10/2010",
@@ -824,7 +824,7 @@ var data = [{
     country: "us",
     shape: "fireball",
     durationMinutes: "6 sec",
-    comments: "huge bright orange sphere appeared and dissapeared"
+    comments: "huge bright orange sphere appeared and disappeared"
   },
   {
     datetime: "1/10/2010",
@@ -851,7 +851,7 @@ var data = [{
     country: "us",
     shape: "other",
     durationMinutes: "1 minute",
-    comments: "Neon blue light in the sky disappears and then phone call is interrupted by unknown sound ."
+    comments: "Neon blue light in the sky disappears and then phone call is interrupted by unknown sound."
   },
   {
     datetime: "1/11/2010",
@@ -878,7 +878,7 @@ var data = [{
     country: "us",
     shape: "triangle",
     durationMinutes: "5 to 10 sec.",
-    comments: "V shaped&#44 extreamly fast&#44 silent and the color was orange."
+    comments: "V shaped&#44 extremely fast&#44 silent and the color was orange."
   },
   {
     datetime: "1/11/2010",
@@ -896,7 +896,7 @@ var data = [{
     country: "ca",
     shape: "triangle",
     durationMinutes: "5 minutes",
-    comments: "triangle shaped craft with four coloured lights"
+    comments: "triangle shaped craft with four colored lights"
   },
   {
     datetime: "1/12/2010",
@@ -904,7 +904,7 @@ var data = [{
     state: "wv",
     country: "us",
     shape: "sphere",
-    durationMinutes: "7 minuts",
+    durationMinutes: "7 minutes",
     comments: "something followed my family and left a piece behind"
   },
   {
@@ -914,7 +914,7 @@ var data = [{
     country: "us",
     shape: "unknown",
     durationMinutes: "2 minutes",
-    comments: "Awaken by several episodes of BRIGHT FLASHING LIGHT and a very LOUD mysterous noise."
+    comments: "Awaken by several episodes of BRIGHT FLASHING LIGHT and a very LOUD mysterious noise."
   },
   {
     datetime: "1/12/2010",
@@ -959,7 +959,7 @@ var data = [{
     country: "us",
     shape: "disk",
     durationMinutes: "15minutes",
-    comments: "five glowning globes over waukesha&#44wi"
+    comments: "five glowing globes over waukesha&#44wi"
   },
   {
     datetime: "1/12/2010",
@@ -977,7 +977,7 @@ var data = [{
     country: "us",
     shape: "triangle",
     durationMinutes: "30 seconds",
-    comments: "Blinking lights on a rectanglar shaped object spotted in the sky in White Oak&#44 PA."
+    comments: "Blinking lights on a rectangular shaped object spotted in the sky in White Oak&#44 PA."
   },
   {
     datetime: "1/13/2010",
@@ -995,6 +995,6 @@ var data = [{
     country: "us",
     shape: "unknown",
     durationMinutes: "4 minutes",
-    comments: "Bright orange object&#44 rapid speed and direction changes .."
+    comments: "Bright orange object&#44 rapid speed and direction changes."
   }
 ];

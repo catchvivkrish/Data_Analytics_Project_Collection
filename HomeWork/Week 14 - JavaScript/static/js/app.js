@@ -39,7 +39,9 @@ submit.on('click', function() {
     // Obtain the filter type
     var filter_type = d3.select('#filter_type').property('value')
     // Obtain the filter value
-    var filter_value = d3.select('#filter_value').property("value")
+    var filter_value_as_is = d3.select('#filter_value').property("value")
+    // Convert input data to lower case
+    var filter_value = filter_value_as_is.toLowerCase()
     // check the type of filter and apply the respective filter on the base dataset
     if (filter_type === 'date'){
        var filtered_data = ufoData.filter((value) => value.datetime === filter_value)

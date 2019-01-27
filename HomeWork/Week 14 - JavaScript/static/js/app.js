@@ -1,6 +1,13 @@
 // from data.js
 var ufoData = data;
 
+// function that decodes the html character encoding 
+function HtmlDecode(s) {
+    var el = document.createElement("div");
+    el.innerHTML = s;
+    return el.innerText || el.textContent;
+}
+
 // create a function to clear table body and load it with the dataset passed to the function
 function display(dataset) {
 // select the table body
@@ -12,22 +19,15 @@ dataset.forEach( (dataset) => {
     var row = tbody.append('tr')
     Object.entries(dataset).forEach(([key,value]) => {
     var col = row.append('td')
-    col.text(value)
+    // call the function to decode the html characters that might be encoded like &#33, &#39, &#44 etc.
+    var decoded_value = HtmlDecode(value)
+    col.text(decoded_value)
     })
 })
 // Obrain the row count of the filtered data and print on screen
 var record_count = CountRows()
 document.getElementById("row-count").innerHTML = "Total records found: " + record_count;
 }
-
-// function filter(type,val) {
-//     console.log(type)
-//     console.log(val)
-//     console.log(ufoData)
-//     var fil = ufoData.filter(value => value.type === val)
-//     console.log(fil)
-//    // console.log(filtered_data)
-// }
 
 //Display all data on page loan
 display(ufoData)

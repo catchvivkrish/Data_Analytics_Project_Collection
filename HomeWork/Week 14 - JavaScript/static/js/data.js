@@ -203,7 +203,7 @@ var data = [{
     country: "us",
     shape: "unknown",
     durationMinutes: "2 minutes",
-    comments: "Orange/Yellow flickering light in the sky with no sound and abrupt changes in direction&#44 below 12&#44000 feet."
+    comments: "Orange/Yellow flickering light in the sky with no sound and abrupt changes in direction&#44 below 12,000 feet."
   },
   {
     datetime: "1/1/2010",

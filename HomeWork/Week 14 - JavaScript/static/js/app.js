@@ -92,6 +92,7 @@ clear.on('click',function() {
     display(ufoData)
     // Set the value property of the filter_date to blank
     d3.select('#filter_value').property('value', '')
+    d3.select('#filter_type').property('value', 'select')
 })
 
 function CountRows() {

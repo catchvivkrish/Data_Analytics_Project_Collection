@@ -73,10 +73,14 @@ submit.on('click', function() {
         }
         // if no record exists in dataset post filtering by date
         else {
+            document.getElementById("ufo-table").deleteRow(0);
             // select the table body
             var tbody = d3.select("tbody");
             // clear the table body before displaying a message to the user
-            tbody.html('<p>No data present for the date entered. Please try filtering by a different date</p>')
+            tbody.html('<p class="text-danger">No data present for the filter criteria entered.</p>')
+            // Obrain the row count of the filtered data and print on screen
+            var record_count = CountRows()
+            document.getElementById("row-count").innerHTML = "Total records found: " + record_count;
         }
     }
     // if no date is entered then call function to show all data

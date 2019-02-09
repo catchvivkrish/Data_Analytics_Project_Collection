@@ -70,23 +70,22 @@ d3.csv("data.csv", function(err, census_data) {
 	var circles = svgGroup.selectAll("circle")
 						  .data(census_data)
 						  .enter()
-						  .append("circle")
+							.append("circle")
+							.classed("stateCircle",true)
 						  .attr("cx", d => xScale(d.poverty))
 						  .attr("cy", d => yScale(d.healthcare))
 						  .attr('r','15')
-						  .attr('fill','pink')
-						  .attr("opacity", ".5")
+						  .attr("opacity", ".9")
 	
+	// Text generators
 	var text = svgGroup.selectAll("text1")
 						   .data(census_data)
 						   .enter()
-						   .append("text")
+							 .append("text")
+							 .classed("stateText",true)
 						   .attr("x", d => xScale(d.poverty))
 			               .attr("y", d => yScale(d.healthcare))
 			               .text(d => d.abbr)
-			               .attr("font-family", "sans-serif")
-			               .attr("font-size", "10px")
-			               .attr("fill", "blue");
 				
 	// ToolTip
 	var tool_tip = d3.tip()
@@ -102,7 +101,10 @@ d3.csv("data.csv", function(err, census_data) {
 	// Create event listeners to display and hide the tooltip
 	circles.on("click", function(data) {
 			tool_tip.show(data,this)
-		   })
+			 })
+	text.on("click", function(data) {
+				tool_tip.show(data,this)
+				 })
 	circles.on('mouseout', function(data){
 		   tool_tip.hide(data)
 		   })

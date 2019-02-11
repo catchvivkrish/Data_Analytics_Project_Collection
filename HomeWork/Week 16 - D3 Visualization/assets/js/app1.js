@@ -128,7 +128,7 @@ function updateToolTip(selected_x_axis, selected_y_axis, circlesGroup, textGroup
 }
 
 // Importing data from the external CSV file
-d3.csv("data.csv", function(err, census_data) {
+d3.csv("/assets/data/data.csv", function(err, census_data) {
 										if (err) throw err;
 										// Format the data
 										census_data.forEach(function(data) {

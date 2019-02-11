@@ -4,26 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <title>D3Times</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/spacelab/bootstrap.min.css" rel="stylesheet" integrity="sha384-dN0bQBvJ8wEUUKo/xICRDCg194KyqLX7p96/aqHs/bDlswiRc3IxSIjSNfvO9rgD" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/d3Style.css">
 
 </head>
 
 <body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	  <a class="navbar-brand" href="#">D3Times</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarColor01">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+		  </li>
+	  </div>
+	</nav>
+
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-md-12">
-        <h1>D3Times</h1>
-      </div>
     </div>
     <div class="row">
       <div class="col-xs-12  col-md-9">
@@ -33,20 +37,27 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12  col-md-9">
+      <div class="col-xs-12  col-md-12">
         <div class="article">
-          <h2>Correlations Discovered Between Health Risks and Age, Income</h2>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <h2>Correlations between 3 health risk factors against three perhaps underlying factors</h2>
+          <p class="text-primary">We explore the correlations (state-level data) between three health risk factors (obesity, smoking, and uninsured rates) against three perhaps underlying factors (median household income, poverty level, and median age) using survey data collected from <a href = "https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml">U. S. Census Data</a>. Each marker represents an individual state. Click on any of the axis titles to start exploring!</p>
+		  <h4>Observations:</h4>
+		  <p class="text-primary"> 1. A positive correlation exists between poverty levels and levels of uninsured individuals.<br> 
+			  2. We see similar correlations with obesity and smoking levels.<br> 
+			  3. Conversely, we see negative correlations between all three outcomes and median household income. This tracks with the poverty correlations, as in general, we expect the poverty percentage to decrease as median household income increases.<br> 
+			  4. With median age, we see some less obvious correlations.  There might be a weak negative correlation
+			between median age and the uninsured percentage of the population.  This might be due to the presence of Medicare for older individuals.
+			However, full conclusions would require quantification of any correlation.<br> 
+			  5. The smoking percentage shows a positive correlation, as older populations appear to smoke more.  This would seem to correlate well with general knowledge, as acceptance of smoking in public has changed over times.<br> 
+			  6. We see no visible correlation between median age and obesity rates.<br> 
+			  7.Texas had by the highest uninsured rate. <br> 
+			  8. In a different category, Utah has the lowest percentage of smokers among all states. Utah is also the youngest state by median age, and smoking percentage does tend to decrease with a younger population.<br> 
+			  9. Texas and Georgia, stand out, even accounting for income level <br>
+		  </p>
+		  <h4>Final Thoughts:</h4>
+		  <p class="text-primary">
+		    This data is from the year 2014. An interesting fact is that the Affordable Care Act also went into effect in 2014 (Source: <a href="https://en.wikipedia.org/wiki/Patient_Protection_and_Affordable_Care_Act">Wikipedia</a>). It would be interesting to see how this data has changed in the last few years.  One possible clue is that the lowest uninsured rate was in Massachusetts, which implemented a similar program to the Affordable Care Act some years earlier (in fact, the Affordable Care Act takes many ideas from Massachusetts's program).
+		  </p>
         </div>
       </div>
     </div>
@@ -54,11 +65,11 @@
 
   <!-- Footer-->
   <div id="footer">
-    <p>The Coding Boot Camp&copy;2016</p>
+    <p class="site-info">© Copyright - Vivek Krishnan - Data Analytics Bootcamp 2019</p>
   </div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
-    <script type="text/javascript" src="assets/js/app.js"></script> 
+    <script type="text/javascript" src="assets/js/app1.js"></script> 
 
 </body>
 

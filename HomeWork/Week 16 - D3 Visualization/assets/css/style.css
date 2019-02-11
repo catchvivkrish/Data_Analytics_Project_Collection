@@ -19,13 +19,15 @@ body {
   bottom: 0;
   width: 100%; /* Set the fixed height of the footer here */
   height: 10px;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 30px;
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: #446E9B;
+  border-color: #033C73;
 }
 
 #footer p {
   margin: 0;
   font-size: 16px;
+  color: #fff;
 }

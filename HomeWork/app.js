@@ -45,9 +45,7 @@ d3.csv("data.csv", function(err, census_data) {
 		data.smokesLow = +data.smokesLow
 		data.smokesHigh = +data.smokesHigh
 	})
-	console.log(census_data)
-	console.log(data['poverty'])
-	
+
 	// Scaling functions
 	var xScale = d3.scaleLinear()
 				   .domain([d3.min(census_data, d => d.poverty)-2,d3.max(census_data, d => d.poverty)+2])

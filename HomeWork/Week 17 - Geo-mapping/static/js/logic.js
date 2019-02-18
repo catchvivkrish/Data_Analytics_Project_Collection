@@ -1,12 +1,13 @@
-// Store our API endpoint inside queryUrl
+// Store our API endpoints inside respective URL's
 var earthquakes_url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson";
-
 var tectonicplates_url = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
 
+// create function to determine the marker size for each earthquake based in  its magnitude
 function markerSize(magnitude) {
     return magnitude * 4;
 };
 
+// create function to retrun a different color for each earthquake based in  its magnitude
 function Color(magnitude) {
   console.log(magnitude)
   if (magnitude > 5) {
@@ -24,12 +25,14 @@ function Color(magnitude) {
   }
 };
 
+// create a new layer group for earthquake data
 var earthquake_data = new L.LayerGroup()
 
+// create a geoJSON element for the earthquake data
 d3.json(earthquakes_url, function(data) {
   L.geoJSON(data.features, {
       pointToLayer: function(geoJsonPoint, latlng) {
-        return L.circleMarker(latlng,{radius:markerSize(geoJsonPoint.properties.mag)});
+        return L.circleMarker(latlng,{radius:markerSize(geoJsonPoint.properties.mag)})
       },
       style: function (feature) {
           return {
@@ -42,15 +45,18 @@ d3.json(earthquakes_url, function(data) {
       onEachFeature: function (feature, layer) {
         layer.bindPopup(
           "<h4 style='text-align:center;'>" + new Date(feature.properties.time) +
-          "</h4> <hr> <h5 style='text-align:center;'>" + feature.properties.title + "</h5>");
+          "</h4> <hr> <h5 style='text-align:center;'>" + feature.properties.title + "</h5>")
       }
   }).addTo(earthquake_data)
-    createMap(earthquake_data);
+
+// Call the create map function for the eathquake data
+createMap(earthquake_data)
 })
 
+// create a new layer group for tectonicplate data
+var tectonicplates_data = new L.LayerGroup()
 
-var tectonicplates_data = new L.LayerGroup();
-
+// create a geoJSON element for the tectonicplate data
 d3.json(tectonicplates_url, function (geoJson) {
     L.geoJSON(geoJson.features, {
         style: function (geoJsonFeature) {
@@ -62,7 +68,10 @@ d3.json(tectonicplates_url, function (geoJson) {
     }).addTo(tectonicplates_data);
 })
 
+// define the createMap function
 function createMap() {
+
+    // define different base layers
 
     var highContrastMap = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -92,6 +101,7 @@ function createMap() {
         accessToken: 'pk.eyJ1Ijoib2xhd3JlbmNlNzk5IiwiYSI6ImNqZXZvcTBmdDBuY3oycXFqZThzbjc5djYifQ.-ChNrBxEIvInNJWiHX5pXg'
     });
 
+    // List of Base layers to be displayed in the conrol layer
     var baseLayers = {
         "High Contrast": highContrastMap,
         "Street": streetMap,
@@ -99,37 +109,37 @@ function createMap() {
         "Satellite": satellite
     };
 
+    // List of overlay layers to be displayed in the conrol layer
     var overlays = {
         "Earthquakes": earthquake_data,
         "Tectonic Plate Boundaries": tectonicplates_data,
     };
 
+    // deifine base map view and initial zoom level along with default base and overlay layer
     var mymap = L.map('map', {
         center: [37.09, -95.71],
         zoom: 2,
         layers: [streetMap, earthquake_data, tectonicplates_data]
     });
 
+    // add the control layer to the map
     L.control.layers(baseLayers, overlays, {
       collapsed: false
     }).addTo(mymap)
 
-    var legend = L.control({ position: 'bottomleft' });
-
+    // create the legend for the earthquake data
+    var legend = L.control({ position: 'bottomleft' })
     legend.onAdd = function (map) {
-
       var div = L.DomUtil.create('div', 'info legend'),
       magnitude = [0, 1, 2, 3, 4, 5],
-      labels = [];
-
+      labels = []
       div.innerHTML += "<h4 style='margin:4px'>Magnitude</h4>"
-
       for (var i = 0; i < magnitude.length; i++) {
           div.innerHTML +=
           '<i style="background:' + Color(magnitude[i] + 1) + '"></i> ' +
-          magnitude[i] + (magnitude[i + 1] ? '&ndash;' + magnitude[i + 1] + '<br>' : '+');
+          magnitude[i] + (magnitude[i + 1] ? '&ndash;' + magnitude[i + 1] + '<br>' : '+')
       }
-      return div;
-    };
-    legend.addTo(mymap);
+      return div
+    }
+    legend.addTo(mymap)
 }

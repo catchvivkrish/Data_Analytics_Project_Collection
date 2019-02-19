@@ -2,12 +2,12 @@
 var earthquakes_url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson";
 var tectonicplates_url = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
 
-// create function to determine the marker size for each earthquake based in  its magnitude
+// create function to determine the marker size for each earthquake based on its magnitude
 function markerSize(magnitude) {
     return magnitude * 4;
 };
 
-// create function to retrun a different color for each earthquake based in  its magnitude
+// create function to return a different color for each earthquake based on its magnitude
 function Color(magnitude) {
   console.log(magnitude)
   if (magnitude > 5) {
@@ -49,14 +49,14 @@ d3.json(earthquakes_url, function(data) {
       }
   }).addTo(earthquake_data)
 
-// Call the create map function for the eathquake data
+// Call the create map function for the earthquake data
 createMap(earthquake_data)
 })
 
-// create a new layer group for tectonicplate data
+// create a new layer group for tectonic plate data
 var tectonicplates_data = new L.LayerGroup()
 
-// create a geoJSON element for the tectonicplate data
+// create a geoJSON element for the tectonic plate data
 d3.json(tectonicplates_url, function (geoJson) {
     L.geoJSON(geoJson.features, {
         style: function (geoJsonFeature) {
@@ -101,7 +101,7 @@ function createMap() {
         accessToken: 'pk.eyJ1Ijoib2xhd3JlbmNlNzk5IiwiYSI6ImNqZXZvcTBmdDBuY3oycXFqZThzbjc5djYifQ.-ChNrBxEIvInNJWiHX5pXg'
     });
 
-    // List of Base layers to be displayed in the conrol layer
+    // List of Base layers to be displayed in the control layer
     var baseLayers = {
         "High Contrast": highContrastMap,
         "Street": streetMap,
@@ -109,13 +109,13 @@ function createMap() {
         "Satellite": satellite
     };
 
-    // List of overlay layers to be displayed in the conrol layer
+    // List of overlay layers to be displayed in the control layer
     var overlays = {
         "Earthquakes": earthquake_data,
         "Tectonic Plate Boundaries": tectonicplates_data,
     };
 
-    // deifine base map view and initial zoom level along with default base and overlay layer
+    // define base map view and initial zoom level along with default base and overlay layer
     var mymap = L.map('map', {
         center: [37.09, -95.71],
         zoom: 2,

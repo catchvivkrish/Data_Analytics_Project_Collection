@@ -48,9 +48,6 @@ d3.json(earthquakes_url, function(data) {
           "</h4> <hr> <h5 style='text-align:center;'>" + feature.properties.title + "</h5>")
       }
   }).addTo(earthquake_data)
-
-// Call the create map function for the earthquake data
-createMap(earthquake_data)
 })
 
 // create a new layer group for tectonic plate data
@@ -143,3 +140,6 @@ function createMap() {
     }
     legend.addTo(mymap)
 }
+
+// run the create map function
+createMap()

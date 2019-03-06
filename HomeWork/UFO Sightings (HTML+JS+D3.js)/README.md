@@ -17,8 +17,6 @@ Create a HTML web page which renders data from a data.js (array of JavaScript ob
 * JavaScript
 * D3.js
 
-# Analysis / Observable trends 
-
 # Screenshot of the webpage built
 ![png](static/images/webpage1.png)
 

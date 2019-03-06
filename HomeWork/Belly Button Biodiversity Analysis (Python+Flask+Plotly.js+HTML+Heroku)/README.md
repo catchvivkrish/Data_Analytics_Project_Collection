@@ -9,7 +9,7 @@ The belly button is one of the habitats closest to us, and yet it remains relati
 Create an interactive dashboard to explore the amazing diversity of cultured bacteria from the participant's belly buttons!
 
 **Live link:**
-[App - Live Link](https://analytics-belly-btn-diversity.herokuapp.com/)
+[Belly Button Biodiversity Analysis](https://analytics-belly-btn-diversity.herokuapp.com/)
 
 **Solution / Approach**
 * Use sqlite file for the database.
@@ -29,4 +29,4 @@ Create an interactive dashboard to explore the amazing diversity of cultured bac
 
 # Screenshot of the webpage built
 <br>
-![Webpage](Images/webpage.png)
+![png](Images/webpage.png)

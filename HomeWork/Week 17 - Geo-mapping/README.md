@@ -18,9 +18,9 @@ Build an interactive map to visualize [USGS](https://earthquake.usgs.gov/earthqu
 
 # Screenshot of the webpage built:
 
-![4-scatter](Images/webpage3.png)
-![4-scatter](Images/webpage2.png)
-![4-scatter](Images/webpage1.png)
+![png](Images/webpage3.png)
+![png](Images/webpage2.png)
+![png](Images/webpage1.png)
 
 
 

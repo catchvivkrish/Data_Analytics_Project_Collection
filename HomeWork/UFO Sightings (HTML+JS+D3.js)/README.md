@@ -1,4 +1,4 @@
-# UFO Sightings (HTML+JS+D3.js)
+# UFO Sightings (HTML+JS+D3)
 
 **Objective:**
 Create a HTML web page which renders data from a data.js (array of JavaScript object) file in a table format. Allow filtering of data based on different filtering criteria a table to it.

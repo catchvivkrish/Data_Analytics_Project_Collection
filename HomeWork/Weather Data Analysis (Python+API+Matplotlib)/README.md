@@ -1,9 +1,7 @@
 # Weather Data Analysis (Python+API+Matplotlib)
 
-This project uses Python, Python libraries, and the OpenWeatherMap API to visualize the weather of 500+ random cities across the world with varying distance from the equator
-
 **Objective:**
-"What's the weather like as we approach the equator?"
+Visualize the weather of 500+ random cities across the world with varying distance from the equator
 
 **Solution / Approach**
 * Randomly selected 500+ unique (non-repeat) cities based on latitude and longitude.
@@ -15,7 +13,7 @@ This project uses Python, Python libraries, and the OpenWeatherMap API to visual
 	* Cloudiness (%) vs. Latitude
 	* Wind Speed (mph) vs. Latitude
 
-**Technologies/Framework Used:**
+# Technology / Framework
 * Python
 * Pandas 
 * Matplotlib
@@ -23,12 +21,13 @@ This project uses Python, Python libraries, and the OpenWeatherMap API to visual
 * Numpy
 * Requests for connecting to API & JSON Traversals
 
-### Analysis / Observable trends 
+# Analysis / Observable trends 
 * Cities closer to the equator (latitude 0) have higher temperature when compared to cities away from equator (i.e. latitude close to -90 and latitude close to +90)
 * Majority of the cities in the random sample of 501 cities have humidity levels of 60% and higher
 * Majority of the cities in the random sample of 501 cities have cloudiness levels of 15% or lower
 * Wind speeds for cities in the random sample of 501 cities are quite evenly distributed with a noticeable number of cities not having wind speed data (These cities were still considered in the sample size as they had all the other data points needed for plotting
 
+# Screenshot of the output
 #### Latitude vs. Max Temperature
 
 ![png](Images/WeatherPy_Result1.png)

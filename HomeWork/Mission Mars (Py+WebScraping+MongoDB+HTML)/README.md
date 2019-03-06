@@ -13,6 +13,7 @@ Build a web application that scrapes various websites for data related to the Mi
 	* [Mars Facts Web Page](http://space-facts.com/mars/)
 	* [USGS Astrogeology Site](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars) 
 * Initial scraping was done with Jupyter Notebook using following libraries
+	<br>
 	**BeautifulSoup**
 	<br>
 	it is a Python library for pulling data out of HTML and XML files. It works with any parser to provide idiomatic ways of navigating, searching, and modifying the parse tree.

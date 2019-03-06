@@ -3,8 +3,6 @@
 **Objective:**
 Build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page.
 
-**Live link:**
-
 **Solution / Approach**
 * Web Scraping - This project is to build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following websites are scraped for this project:
 	* [NASA Mars News Site](https://mars.nasa.gov/news/)

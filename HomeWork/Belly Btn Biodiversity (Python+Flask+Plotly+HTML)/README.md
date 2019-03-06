@@ -28,5 +28,4 @@ Create an interactive dashboard to explore the amazing diversity of cultured bac
 * Plotly.js - To build interactive charts for the dashboard
 
 # Screenshot of the webpage built
-<br>
 ![png](Images/webpage.png)

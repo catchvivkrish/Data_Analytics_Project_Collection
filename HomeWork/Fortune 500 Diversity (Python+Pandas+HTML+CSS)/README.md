@@ -18,7 +18,7 @@ Analyze diversity across fortune 500 companies by Race and Sex
 ![png](Images/webpage.png)
 
 # Diversity By Sex
-![png](Images/diversity_by_sex.png)
+![png](Images/diversity_sex.png)
 
 # Diversity By Race
-![png](Images/diversity_by_race.png)
+![png](Images/diversity_race.png)

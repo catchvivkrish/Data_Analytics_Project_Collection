@@ -2,7 +2,8 @@
 
 **Objective:**
 Analyze the district-wide standardized test results based on every student's math and reading scores, as well as various information on the schools they attend. The aggregated is to be used to showcase obvious trends in school performance.
-![png](Images/education.png)
+
+![png](Images/education.jpg)
 
 **Solution / Approach**
 The final report included each of the following:
@@ -69,6 +70,7 @@ The final report included each of the following:
   
 ### Scores by School Size
 * Repeated the above breakdown, but this time group schools based on a reasonable approximation of school size (Small, Medium, Large)
+
 ![png](Images/scores_by_school_size.png)
 
 ### Scores by School Type

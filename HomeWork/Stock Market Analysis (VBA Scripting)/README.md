@@ -2,6 +2,7 @@
 
 **Objective:**
 Analyze stock market data.
+
 ![stock Market](Images/stockmarket.jpg)
 
 **Solution / Approach**

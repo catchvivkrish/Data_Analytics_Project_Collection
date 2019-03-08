@@ -8,7 +8,7 @@ Organize and analyze a database of four thousand past projects in order to uncov
 
 **Solution / Approach**
 
-![Kickstarter Table](Images/FullTable.PNG)
+![Kickstarter Table](Images/FullTable.png)
 
 * Used conditional formatting to fill each cell in the `state` column with a different color, depending on whether the associated campaign was "successful," "failed," "cancelled," or is currently "live".
 * Created a new column at column `percent funded` that uses a formula to uncover how much money a campaign made towards reaching its initial goal.
@@ -16,12 +16,12 @@ Organize and analyze a database of four thousand past projects in order to uncov
 * Create a new column at column `average donation` that uses a formula to uncover how much each backer for the project paid on average.
 * Created two new columns, `category` and `sub-category`, which use formulas to split the `Category and Sub-Category` column into two parts.
 
-![Category Stats](Images/CategoryStats.PNG)
+![Category Stats](Images/CategoryStats.png)
 
 * Created a new sheet with a pivot table that will analyze the initial worksheet to count how many campaigns were "successful," "failed," "cancelled," or are currently "live" per **category**.
     * Create a stacked column pivot chart that can be filtered by `country` based on the table was created.
 	
-![Subcategory Stats](Images/SubcategoryStats.PNG)
+![Subcategory Stats](Images/SubcategoryStats.png)
 
 * Created a new sheet with a pivot table that will analyze the initial sheet to count how many campaigns were "successful," "failed," "cancelled," or are currently "live" per **sub-category**.
     * Create a stacked column pivot chart that can be filtered by `country` and `parent-category` based on the table that was created.
@@ -29,7 +29,7 @@ Organize and analyze a database of four thousand past projects in order to uncov
 * Created a new column `Date Created Conversion` that converts the data contained within `launched_at` into Excel's Date format
 * Created a new column `Date Ended Conversion` that converts the data contained within `deadline` into Excel's Date format
 
-![Outcomes Based on Launch Date](Images/LaunchDateOutcomes.PNG)
+![Outcomes Based on Launch Date](Images/LaunchDateOutcomes.png)
 
 * Created a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `parent category` and `Years`.
 * Created a pivot chart line graph that visualizes this new table.
@@ -49,7 +49,7 @@ Organize and analyze a database of four thousand past projects in order to uncov
     * 45000 to 49999
     * Greater than or equal to 50000
 
-![Goal Outcomes](Images/GoalOutcomes.PNG)
+![Goal Outcomes](Images/GoalOutcomes.png)
 
 * Used the `COUNTIFS()` formula, count how many successful, failed, and canceled projects were created with goals within those ranges listed above. Populate the `Number Successful`, `Number Failed`, and `Number Canceled` columns with this data.
 * Added up each of the values in the `Number Successful`, `Number Failed`, and `Number Canceled` columns to populate the `Total Projects` column. Then, used a mathematic formula, find the percentage of projects which were successful, failed, or were canceled per goal range.

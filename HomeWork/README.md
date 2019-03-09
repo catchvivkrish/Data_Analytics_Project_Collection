@@ -1,16 +1,32 @@
-# Project List
-## Project 1 - Excel
-## Project 2 - VBA Scripting
-## Project 3 - Python
-## Project 4 - Python + Pandas
-## Project 5 - Python + Matplotlib
-## Project 6 - Python + API
-## Project 9 - SQL
-## Project 10 - Flask + Advanced Data Storage and Retrieval
-## Project 11 - HTML + CSS
-## Project 12 - Web Scraping + Mongo DB
-## Project 13 - Extract Transform Load Project
-## Project 14 - Java Scripting + D3 
-## Project 15 - Java Scripting + Plotly 
-## Project 16 - Java Scripting + SVG 
-## Project 17 - Leaflet + Geo Mapping
+# Collection of Data Analytics Projects
+
+# Objective:
+To facilitate driving decisions based on a deeper understanding of data through analytics, I started a journey as an explorer to extract insights from data and present them to help with better decision making and open up new possibilities. These are a collection of projects that have helped me in getting an in-depth exposure to various tools and technologies that can be used to slice, dice and represent data.
+
+# Technology / Framework
+* Fundamental Statistics
+	* Modeling
+	* Forecasting
+* Python Programming
+	* NumPy
+	* Pandas
+	* Matplotlib
+	* API Interactions
+Social Media Mining
+* Databases
+	* MySQL
+	* MongoDB
+	* ETL
+* Front–End Web Visualization
+	* HTML
+	* CSS
+	* Bootstrap
+	* Dashboarding
+	* JavaScript Charting
+	* D3.js
+	* Geomapping with Leaflet.js
+* Business Intelligence Software
+	* Tableau
+* Advanced Excel
+	* Pivot Tables
+	* VBA Scripting
